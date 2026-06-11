@@ -6,19 +6,56 @@ public class StringBuiltInMethods {
 		//String s1 = sc.nextLine();
 		//String s2 = sc.nextLine();
 		String str = sc.nextLine();
-		String t = sc.nextLine();
+		int startIndex = sc.nextInt();
+		int endIndex = sc.nextInt();
+		//char old_ch = sc.next().charAt(0);
+		//char new_ch = sc.next().charAt(0);
+		//String t = sc.nextLine();
 		//String ch = sc.nextLine();
 		//int k = sc.nextInt();
-		System.out.println(contains(str, t));
+		
+		System.out.println(subString(str, startIndex, endIndex));
+		//System.out.println(subString(str, startIndex));
+		//System.out.println(replace(str, old_ch, new_ch));
+		//System.out.println(contains(str, t));
 		//System.out.println(endsWith(str, ch));
 		//System.out.println(startsWith(str, ch));
 		//System.out.println(equals(s1, s2));
+		//System.out.println(toCharArray(str));
 		//System.out.println(trim(str));
 		//System.out.println(lastIndexOf(str, ch));
 		//System.out.println(indexOf(str, ch, k));
 		//System.out.println(indexOf(str, ch));
 		//System.out.println(toLowerCase(str));
 		//System.out.println(toUpperCase(str));
+	}
+	
+	public static String subString(String str, int startIndex, int endIndex) {
+		// TODO Auto-generated method stub
+		String t = "";
+		for (int i = startIndex; i < endIndex; i++) {
+			t += str.charAt(i);
+		}
+		return t;
+	}
+	
+	public static String subString(String str, int startIndex) {
+		// TODO Auto-generated method stub
+		String t = "";
+		for (int i = startIndex; i < str.length(); i++) {
+			t += str.charAt(i);
+		}
+		return t;
+	}
+	public static String replace(String str, char old_ch, char new_ch) {
+		// TODO Auto-generated method stub
+		char ch[] = toCharArray(str);
+		for (int i = 0; i < ch.length; i++) {
+			if(ch[i] == old_ch) {
+				ch[i] = new_ch;
+			}
+		}
+		return new String(ch);
 	}
 	public static boolean contains(String str, String t) {
 		int count = 0;
@@ -75,7 +112,14 @@ public class StringBuiltInMethods {
 			return false;
 		}
 	}
-
+	
+	public static char[] toCharArray(String str) {
+		char []ch = new char[str.length()];
+		for (int i = 0; i < ch.length; i++) {
+			ch[i] = str.charAt(i);
+		}
+		return ch;
+	}
 	public static String trim(String str) {
 		// TODO Auto-generated method stub
 		String t = "";
