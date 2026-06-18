@@ -6,15 +6,15 @@ public class StringBuiltInMethods {
 		//String s1 = sc.nextLine();
 		//String s2 = sc.nextLine();
 		String str = sc.nextLine();
-		int startIndex = sc.nextInt();
-		int endIndex = sc.nextInt();
+		//int startIndex = sc.nextInt();
+		//int endIndex = sc.nextInt();
 		//char old_ch = sc.next().charAt(0);
 		//char new_ch = sc.next().charAt(0);
 		//String t = sc.nextLine();
-		//String ch = sc.nextLine();
-		//int k = sc.nextInt();
+		String ch = sc.nextLine();
+		int k = sc.nextInt();
 		
-		System.out.println(subString(str, startIndex, endIndex));
+		//System.out.println(subString(str, startIndex, endIndex));
 		//System.out.println(subString(str, startIndex));
 		//System.out.println(replace(str, old_ch, new_ch));
 		//System.out.println(contains(str, t));
@@ -24,7 +24,7 @@ public class StringBuiltInMethods {
 		//System.out.println(toCharArray(str));
 		//System.out.println(trim(str));
 		//System.out.println(lastIndexOf(str, ch));
-		//System.out.println(indexOf(str, ch, k));
+		System.out.println(indexOf(str, ch, k));
 		//System.out.println(indexOf(str, ch));
 		//System.out.println(toLowerCase(str));
 		//System.out.println(toUpperCase(str));
