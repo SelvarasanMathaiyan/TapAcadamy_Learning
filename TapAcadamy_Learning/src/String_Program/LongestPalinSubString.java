@@ -17,7 +17,6 @@ public class LongestPalinSubString {
 			i++; j--;
 		}
 		return true;
-		
 	}
 
 	public static String findLongestPalinSubstring(String str) {
@@ -37,4 +36,21 @@ public class LongestPalinSubString {
 		}
 		return res;
 	}
+	//another method
+//	public static String findLongestPalinSubstring(String str){
+//	    for(int size = str.length(); size >= 1; size--)
+//	    {
+//	        for(int i = 0; i <= str.length() - size; i++)
+//	        {
+//	             String temp = "";
+//	             for(int j = i; j < size + i; j++)
+//	             {
+//	                 temp += str.charAt(j);
+//	             } 
+//	             if(isPalindrome(temp))
+//	            	return temp;
+//	        }
+//	    }
+//	    return null;
+//	}
 }
