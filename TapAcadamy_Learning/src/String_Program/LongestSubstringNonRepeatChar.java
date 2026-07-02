@@ -21,6 +21,7 @@ public class LongestSubstringNonRepeatChar {
 					break;
 				}
 			}
+			System.out.println(temp);
 			if(temp.length() > res.length()) {
 				res = temp;
 			}

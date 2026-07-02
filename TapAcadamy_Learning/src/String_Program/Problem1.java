@@ -38,7 +38,7 @@ public class Problem1 {
 					errorCount++;
 				}
 			}
-			return String.valueOf(errorCount-1);
+			return (errorCount > 0 )? String.valueOf(errorCount-1): String.valueOf(errorCount);
 		}
 	}
 	// This answer is how many characters append at the end make the palindrome.
@@ -49,6 +49,8 @@ public class Problem1 {
 		}
 		else {
 			for(int i = 0; i < str.length(); i++) {
+				String sub = str.substring(i);
+				System.out.println(sub);
 				if(isPalindrome(str.substring(i))) {
 					return String.valueOf(i);
 				}
