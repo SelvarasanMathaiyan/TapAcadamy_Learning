@@ -19,28 +19,28 @@ class Customer{
 		mobile = m;
 	}
 }
-// method overloading follows the
+// method overloading follows the type promotion. type promotion means type casting.
 class Calculator{
-//	int add(int a, int b) {
-//		System.out.println("1");
-//		return a + b;
-//	}
-//	float add(int a, float b) {
-//		System.out.println("2");
-//		return a + b;
-//	}
-//	double add(float a, double b) {
-//		System.out.println("3");
-//		return a + b;
-//	}
-//	double add(double a, double b) {
-//		System.out.println("4");
-//		return a + b;
-//	}
-//	double add(double a, float b) {
-//		System.out.println("5");
-//		return a + b;
-//	}
+	int add(int a, int b) {
+		System.out.println("1");
+		return a + b;
+	}
+	float add(int a, float b) {
+		System.out.println("2");
+		return a + b;
+	}
+	double add(float a, double b) {
+		System.out.println("3");
+		return a + b;
+	}
+	double add(double a, double b) {
+		System.out.println("4");
+		return a + b;
+	}
+	double add(double a, float b) {
+		System.out.println("5");
+		return a + b;
+	}
 	double add(int a, double b) {
 		System.out.println("6");
 		return a + b;
@@ -53,25 +53,25 @@ class Calculator{
 public class MethodOverloading {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-//		Customer c1 = new Customer();
-//		c1.gender = 'M';
-//		c1.city = "Bangalore";
-//		c1.cId = 1234;
-//		c1.mobile = 984374697L;
-//		System.out.println(c1.gender);
-//		System.out.println(c1.city);
-//		System.out.println(c1.cId);
-//		System.out.println(c1.mobile);
-//		c1.setDetails(sc.nextLine().charAt(0));
-//		c1.setDetails(sc.nextLine());
-//		c1.setDetails(sc.nextInt());
-//		c1.setDetails(sc.nextLong());
-//		System.out.println(c1.gender);
-//		System.out.println(c1.city);
-//		System.out.println(c1.cId);
-//		System.out.println(c1.mobile);
+		Customer c1 = new Customer();
+		c1.gender = 'M';
+		c1.city = "Bangalore";
+		c1.cId = 1234;
+		c1.mobile = 984374697L;
+		System.out.println(c1.gender);
+		System.out.println(c1.city);
+		System.out.println(c1.cId);
+		System.out.println(c1.mobile);
+		c1.setDetails(sc.nextLine().charAt(0));
+		c1.setDetails(sc.nextLine());
+		c1.setDetails(sc.nextInt());
+		c1.setDetails(sc.nextLong());
+		System.out.println(c1.gender);
+		System.out.println(c1.city);
+		System.out.println(c1.cId);
+		System.out.println(c1.mobile);
 		
-		Calculator c2 = new Calculator();
-		System.out.println(c2.add(10, 20.2));
+//		Calculator c2 = new Calculator();
+//		System.out.println(c2.add(10.45687946112, 20));
 	}
 }
