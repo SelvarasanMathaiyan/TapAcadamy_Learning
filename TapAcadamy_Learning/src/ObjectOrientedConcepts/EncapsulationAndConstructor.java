@@ -5,7 +5,7 @@ class Customer1{
 	private String cname;
 	private long cnumber;
 	public Customer1(int cid, String cname, long cnumber) { //Constructor is does not return type. It is must same name of class name.
-		this.cid = cid; //Shadowing error(name clash occur without this keyword.). so use same name for instance variable and local variable. use this keyword for instance variable.
+		this.cid = cid; //use same name for instance variable and local variable Shadowing error(name clash occur without this keyword) occurred. so  use this keyword for instance variable.
 		this.cname = cname;
 		this.cnumber = cnumber;
 	}
@@ -20,9 +20,9 @@ class Customer1{
 	}
 }
 // Encapsulation is a process of protecting important components of objects. it is preventing direct access. Encapsulation is not preventing access. It is providing controlled access.
-public class Encapsulation {
+public class EncapsulationAndConstructor {
 	public static void main(String args[]) {
-		Customer1 c1 = new Customer1(101, "Selva", 701002582); //default setter in java. It is a parameterized constructors. constructor is a specialized setter in java. It is during object creation, helps initialized the object.
+		Customer1 c1 = new Customer1(101, "Selva", 701002582); //default setter in java. It is a parameterized constructors. constructor is a specialized setter in java. It is during the object creation, helps initialized the object.
 		System.out.println(c1.getCid() + " " + c1.getCname() + " " + c1.getCnumber());
 	}
 }
