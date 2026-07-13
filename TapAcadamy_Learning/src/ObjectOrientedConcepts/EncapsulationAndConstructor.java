@@ -22,7 +22,7 @@ class Customer1{
 // Encapsulation is a process of protecting important components of objects. it is preventing direct access. Encapsulation is not preventing access. It is providing controlled access.
 public class EncapsulationAndConstructor {
 	public static void main(String args[]) {
-		Customer1 c1 = new Customer1(101, "Selva", 701002582); //default setter in java. It is a parameterized constructors. constructor is a specialized setter in java. It is during the object creation, helps initialized the object.
+		Customer1 c1 = new Customer1(101, "Selva", 7010025820L); //default setter in java. It is a parameterized constructors. constructor is a specialized setter in java. It is during the object creation, helps initialized the object.
 		System.out.println(c1.getCid() + " " + c1.getCname() + " " + c1.getCnumber());
 	}
 }
