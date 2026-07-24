@@ -2,7 +2,7 @@ package ObjectOrientedConcepts;
 class DemoClass1{
 	int x, y;
 	DemoClass1() {
-		//super() - it was call Object class super().
+		//super() - it was call Object class.
 		x = 100;
 		y = 200;
 	}
@@ -17,8 +17,8 @@ class DemoClass2 extends DemoClass1{
 		this(9, 99); //this() call only for local chaining.
 	}
 	DemoClass2(int a, int b) {
-		//super(); //super() call only for constructor chaining. it is default super(). user provide or not java automatically provide the super(). Constructors first line must have a super method. it was take the control to neighbor or one class only.
-		//super(300, 400);
+		//super(); //super() call only for constructor chaining. it is default super(). user provide or not, java automatically provide the super(). Constructors first line must have a super method. it was take the control to above one class constructor only.
+		//super(300, 400); //parameterized super(). so it was user defined method. it was choose above parent class same parameterized constructor.
 		this.a = a;
 		this.b = b;
 	}
