@@ -1,6 +1,6 @@
 package ObjectOrientedConcepts;
 //Cyclic Inheritance - not support for java. Because which one is parent class and child class doesn't identified. so it is not supported in java.
-class Temp1 extends Temp2{
+/*class Temp1 extends Temp2{
 	void fun1() {
 		System.out.println("Java");
 	}
@@ -16,4 +16,4 @@ public class CyclicInheritance {
 		t2.fun1();
 		t2.fun2();
 	}
-}
+}*/

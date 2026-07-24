@@ -1,6 +1,6 @@
 package ObjectOrientedConcepts;
 //Multiple Inheritance not supported in Java.
-class Test1 extends Object{ //parent class
+/*class Test1 extends Object{ //parent class
 	int a = 10;
 	void fun1() {
 		System.out.println("Java");
@@ -22,6 +22,6 @@ public class MultipleInheritance {
 		Test3 t3 = new Test3();
 		t3.display();
 	}
-}
+}*/
 
 //Diamond Shaped problem means Test1 and Test2 is extends the object class. Test3 is extends Test1 and Test2 class. one common a variable derived from Test1, Test2. but Test 3 is which once a is print. so it is confused. it is occurred for ambiguous type error.
