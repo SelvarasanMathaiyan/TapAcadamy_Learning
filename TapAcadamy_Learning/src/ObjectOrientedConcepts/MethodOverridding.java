@@ -1,4 +1,5 @@
 package ObjectOrientedConcepts;
+// Method overriding is a process of child class inheriting method from parent class method. It can be modified or changing its behaviors and used it.
 class Testing1{
 	void fun1() { //default method
 		System.out.println("Parent Class Method");
