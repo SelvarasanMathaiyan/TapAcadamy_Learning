@@ -5,6 +5,6 @@
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry excluding="PatternProgramming/" kind="src" path="src"/>
+	<classpathentry excluding="PatternProgramming/|PatternProgramming/" kind="src" path="src"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
