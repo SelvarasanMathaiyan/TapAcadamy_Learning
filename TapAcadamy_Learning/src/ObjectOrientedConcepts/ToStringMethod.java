@@ -36,6 +36,6 @@ public class ToStringMethod {
 //public class ToStringMethod {
 //	public static void main(String[] args) {
 //		String str = new String("Java");
-//		System.out.println(str); //it is print the output. because toString() override the String class automatically. so it was show the output.
+//		System.out.println(str); //it is print the output. because String class is override the toString() automatically. so it was show the output.
 //	}
 //}

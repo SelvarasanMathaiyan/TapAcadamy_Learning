@@ -1,51 +1,88 @@
 package ObjectOrientedConcepts;
-
-abstract class Bird{
-	abstract void fly();
-	abstract void eat();
-}
-
-abstract class Eagle extends Bird{
-
-	@Override
-	void fly() {
-		System.out.println("Eagle is flying at the higher heights");
+import java.util.*;
+abstract class Shape{
+	
+	float area;
+	
+	abstract void acceptInput();
+	abstract void calcArea();
+	
+	void dispArea() {
+		System.out.println(area);
 	}
 	
 }
 
-class SerpentEagle extends Eagle{
+class Square extends Shape{
+	
+	float side;
+	Scanner sc = new Scanner(System.in);
+	@Override
+	void acceptInput() {
+		System.out.println("Enter the sides of square: ");
+		side = sc.nextFloat();
+	}
 
 	@Override
-	void eat() {
-		System.out.println("Serpent Eagle hunts over mountains an eats");
+	void calcArea() {
+		area = side * side;
 	}
 	
 }
 
-class GoldenEagle extends Eagle{
+class Rectangle extends Shape{
+	
+	float length;
+	float breadth;
+	
+	Scanner sc = new Scanner(System.in);
+	@Override
+	void acceptInput() {
+		System.out.println("Enter the length of rectangle: ");
+		length = sc.nextFloat();
+		System.out.println("Enter the breadth of rectangle: ");
+		breadth = sc.nextFloat();
+	}
 
 	@Override
-	void eat() {
-		System.out.println("Golden Eagle hunts over oceans an eats");
+	void calcArea() {
+		area = length * breadth;
 	}
 	
 }
 
-class Routine{
-	static void works(Bird ref) {
-		ref.fly();
-		ref.eat();
+class Circles extends Shape{
+
+	float radius;
+	Scanner sc = new Scanner(System.in);
+	@Override
+	void acceptInput() {
+		System.out.println("Enter the radius of circle: ");
+		radius = sc.nextFloat();
 	}
+
+	@Override
+	void calcArea() {
+		area = 3.141f * radius * radius;
+	}
+	
 }
 
+class Geometry{
+	static void permit(Shape ref) {
+		ref.acceptInput();
+		ref.calcArea();
+		ref.dispArea();
+	}
+}
 public class AbstractionProgram2 {
 	public static void main(String[] args) {
-		SerpentEagle se = new SerpentEagle();
-		GoldenEagle ge = new GoldenEagle();
+		Square s = new Square();
+		Rectangle r = new Rectangle();
+		Circles c = new Circles();
 		
-		Routine.works(se);
-		Routine.works(ge);
-		
+		Geometry.permit(s);
+		Geometry.permit(r);
+		Geometry.permit(c);
 	}
 }
