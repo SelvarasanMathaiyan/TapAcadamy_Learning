@@ -2,11 +2,11 @@ package ObjectOrientedConcepts;
 import java.util.*;
 //Interface - Interface is achieved the standardization issue. Interface class is contain collection of abstract method. implements keyword is used to child class implementing the interface class.
 interface CalculatorProgram{
-	public void add(); //Rule1: one interface can have multiple implements
-	public void sub(); 
+	void add(); // Rule 3: Java automatically provide (public abstract void add()).
+	void sub(); 
 }
 
-class MyCalculator1 implements CalculatorProgram{
+class MyCalculator1 implements CalculatorProgram{ //Rule1: one interface can have multiple implements
 	
 	int x = 100;
 	int y = 200;
@@ -83,6 +83,10 @@ class MyCalculator3 implements CalculatorProgram{
 		else
 		System.out.println(x-y);
 	}
+	
+	public void mul() { 
+		System.out.println("Specialized method");
+	}
 }
 
 class Math{
@@ -91,8 +95,9 @@ class Math{
 		ref.sub();
 	}
 }
-public class InterfaceConcept {
+public class InterfaceConcepts1 {
 	public static void main(String[] args) {
+		CalculatorProgram ref;
 		MyCalculator1 mc1 = new MyCalculator1();
 		MyCalculator2 mc2 = new MyCalculator2();
 		MyCalculator3 mc3 = new MyCalculator3();
@@ -100,5 +105,9 @@ public class InterfaceConcept {
 		Math.permit(mc1); 
 		Math.permit(mc2);
 		Math.permit(mc3);
+		
+		ref = mc3; 
+		((MyCalculator3)(ref)).mul();//Rule 4: Specialized methods cannot be accessed directly using interface type ref. but it access indirectly using downcasting.
+		
 	}
 }
