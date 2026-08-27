@@ -9,9 +9,14 @@ abstract class Plane2{ // An abstract class is such a class whose object cannot 
 	abstract void fly();
 	abstract void land();
 	
+	public Plane2() { //Constructor in abstract class doesn't call directly. because abstract class cannot have object. child class extends from the abstract class. so the child class default constructor at the time of object creation. it is called abstract class constructor using super().
+		System.out.println("Plane2 class constructor");
+	}
+	
 	void fuel() {
 		System.out.println("Fuel method");
 	}
+	
 }
 
 abstract class Plane3{ // An abstract class may or may not contain abstract method, it is allowed. because we may want to prevent direct object creation of that class.
