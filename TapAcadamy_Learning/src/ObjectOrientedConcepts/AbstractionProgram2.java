@@ -15,7 +15,7 @@ abstract class Shape{
 
 class Square extends Shape{
 	
-	float side;
+	private float side; // this class methods behaves like as a getters and setters. so that class handle the private variables.
 	Scanner sc = new Scanner(System.in);
 	@Override
 	void acceptInput() {
@@ -32,8 +32,8 @@ class Square extends Shape{
 
 class Rectangle extends Shape{
 	
-	float length;
-	float breadth;
+	private float length;
+	private float breadth;
 	
 	Scanner sc = new Scanner(System.in);
 	@Override
@@ -53,7 +53,7 @@ class Rectangle extends Shape{
 
 class Circles extends Shape{
 
-	float radius;
+	private float radius;
 	Scanner sc = new Scanner(System.in);
 	@Override
 	void acceptInput() {
