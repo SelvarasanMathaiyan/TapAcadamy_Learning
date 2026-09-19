@@ -1,7 +1,7 @@
 package ObjectOrientedConcepts;
 //In java-7 interface only allowed abstract methods and constants (variables). so it is pure abstraction. but one disadvantage doesn't update the interface in future.
-//In java-8 interface allowed for same Java-7 features and additionally default methods is introduced. it is allowed method bodies with in the interface and update the methods within interface without breaking the code.
-//In java-9 interface followed java-7 and java-8 and additionally static methods and private methods is allowed.
+//In java-8 interface allowed for same Java-7 features and additionally default methods and static methods is introduced. 
+//In java-9 interface followed java-7 and java-8 and additionally private and private static methods is allowed.
 interface Bikes{
 	void start();
 	
@@ -21,6 +21,8 @@ interface Bikes{
 	private void changeGear() {
 		System.out.println("Change gears");
 	}
+	
+	// private static method - it is same for private methods. but static methods is only access static methods.
 	private static void accelarate() {
 		System.out.println("Accerlate");
 	}
