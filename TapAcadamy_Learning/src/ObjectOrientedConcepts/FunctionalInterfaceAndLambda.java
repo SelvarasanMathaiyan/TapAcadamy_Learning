@@ -2,7 +2,7 @@ package ObjectOrientedConcepts;
 //Functional Interface contains one abstract methods. but it is allowed default, static and private methods.
 //Functional Interface can be implemented for, i. Normal class ii. Inner class iii. Anonymous inner class iv. Lambda expression
 
-//@FunctionalInterface
+@FunctionalInterface
 interface Shows {
 	void disp(); 
 	default void display1() {
