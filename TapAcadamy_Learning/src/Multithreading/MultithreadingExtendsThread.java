@@ -1,9 +1,12 @@
 package Multithreading;
 import java.util.*;
-//Multi-threading can achieve two types: 1. extends Thread class 2. implements Runnable interface
-//Thread Scheduler can create the new stack and allocate thread. Thread type class only create for new stacks and thread.
+//Multi-threading: It is a process of executes multiple threads concurrently within a single program.Thread Scheduler can create the new stacks and allocate threads. Thread type class only create for new stacks and threads.
 //Advantage of Multi-threading: Efficient utilization of CPU time.
 //Steps to achieve multi-threading: 1. Create a class & make it a subclass of Thread. 2. Override run(). 3. indirectly can run() using start().
+
+//Multi-threading can achieve two types: 1. extends Thread class 2. implements Runnable interface
+
+
 class Test1 extends Thread{
 	@Override
 	public void run() {

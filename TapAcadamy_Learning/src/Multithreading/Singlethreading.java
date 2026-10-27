@@ -1,6 +1,6 @@
 package Multithreading;
 import java.util.*;
-//Program is stored in hard disk, it is called program. It is move to the RAM, it is called the task/process.
+//Program is stored in hard disk, it is called program. It is move to the RAM, under the execution it is called the task/process.
 //Single threading - Single threading means executing a program using only one thread of execution. Tasks are generally execute one after another in sequence. It is called single threaded program (or) sequential program.
 //disadvantage - Efficient utilization of CPU time was not happened.
 public class Singlethreading {
