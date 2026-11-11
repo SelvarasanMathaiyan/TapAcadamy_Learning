@@ -4,7 +4,7 @@ package Multithreading;
 
 
 class BathRoom{
-	//synchronized keyword used in method.
+	//synchronized keyword used in method - Set of instruction in the method, method was locked for using synchronized keyword. one thread has access at the any point of time.
 //	synchronized void bathRoom()
 //	{
 //		try {
@@ -29,6 +29,7 @@ class BathRoom{
 			Thread.sleep(2000);
 			System.out.println(Thread.currentThread().getName()+ " is executing 4 statement");
 			Thread.sleep(2000);
+			//synchronized keyword used in block - specific statements are locked, one thread has executing at the point of time. one has finished other thread is executed.
 			synchronized(this) {
 			System.out.println(Thread.currentThread().getName()+ " is executing 5 statement");
 			Thread.sleep(2000);
