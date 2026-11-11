@@ -1,5 +1,6 @@
 package Multithreading;
-//join() - One thread waits for another thread to complete its execution. After that, the waiting thread continues its own execution.
+//join() - One thread waits for another thread to complete its execution. After that, the waiting thread continues its own execution. But one disadvantage is there in join method, Not efficiently utilize the CPU time. Because we have control thread scheduler.
+//isAlive() - check thread is alive or dead.
 class Example22 extends Thread{
 	@Override
 	public void run(){

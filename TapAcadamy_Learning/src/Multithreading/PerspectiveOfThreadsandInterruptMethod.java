@@ -2,7 +2,7 @@ package Multithreading;
 //Multi-threading can have see in two perspective,
 //1. Stack Perspective (memory perspective)
 //2. State Perspective
-//state: new(start)-->runnable-->running(sleep, resource unavailable, wait)-->dead.
+//7 states of thread: new(start)-->runnable-->running-->Blocked(sleep, (blocked)resource unavailable, wait)-->dead.
 //If you want interrupt in any state is possible. using interrupt(). interrupt means kills the thread. it will go to dead state or directly finished execution.
 public class PerspectiveOfThreadsandInterruptMethod {
 	public static void main(String[] args) {

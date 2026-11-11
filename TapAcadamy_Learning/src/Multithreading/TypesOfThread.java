@@ -33,7 +33,7 @@ class Demos2 extends Thread{
 				e.printStackTrace();
 			}
 		}
-		//System.out.println("User thread finished execution");
+		//System.out.println("Daemon thread finished execution");
 	}
 }
 public class TypesOfThread {
