@@ -1,6 +1,6 @@
 package Multithreading;
 //join() - One thread waits for another thread to complete its execution. After that, the waiting thread continues its own execution.
-class Example extends Thread{
+class Example22 extends Thread{
 	@Override
 	public void run(){
 		System.out.println("Character printing is started");
@@ -16,13 +16,15 @@ class Example extends Thread{
 		System.out.println("Character printing is ended");
 	}
 }
-public class JoinMethod {
+public class JoinandIsAliveMethod {
 	public static void main(String[] args) {
 		System.out.println("Main thread started execution");
-		Example t = new Example();
-		t.start();
+		Example22 t = new Example22();
 		try {
+			t.start();
+			System.out.println(t.isAlive());
 			t.join();
+			System.out.println(t.isAlive());
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
